@@ -21,4 +21,11 @@
 - [x] Update Kickstarter HTML with new logo-focused header
 - [x] Update landing page with new logo-focused header
 - [x] Fix text cutoff on "EVERY DEATH IS UNIQUE." image
-- [ ] Push all changes to GitHub
+- [x] Adjust image to crop from bottom instead of top to preserve text
+- [x] Push all changes to GitHub
+- [x] Update Kickstarter preview copy to emphasize "Generated Adventure" genre
+- [x] Update landing page copy with new positioning and challenge angle
+- [ ] Push Kickstarter changes to GitHub
+- [ ] Save landing page checkpoint
+- [ ] Create marketing assets (social media graphics, email headers)
+- [ ] Write video sales letter script for Kickstarter project video
