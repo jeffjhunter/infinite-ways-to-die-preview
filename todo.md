@@ -3,4 +3,22 @@
 - [x] Add "Death by Betrayal" scenario image to gallery
 - [x] Add "Infinite Possibilities" teaser image with question marks and infinity symbol
 - [x] Update index.html to display new death scenario images
-- [ ] Make infinite possibilities card full-width for visual impact
+- [x] Make infinite possibilities card full-width for visual impact
+- [x] Research top-performing Kickstarter campaign titles in games/interactive fiction
+- [x] Create 10 optimized title variations based on best practices
+- [x] Research existing AI-generated narrative games to verify uniqueness
+- [x] Identify legitimate "world's first" claim for title
+- [x] Research existing game genre terminology and conventions
+- [x] Create original genre name for the game category
+- [x] Create AI-focused genre names emphasizing 100% generation and uniqueness
+- [x] Create Kickstarter header image at 1024x576 pixels with "Generated Adventure" positioning
+- [x] Research and analyze top Kickstarter game campaign header images
+- [x] Review official Kickstarter brand asset guidelines
+- [x] Create new header image with game title integrated into design
+- [x] Regenerate header with radiation crystal on backpack and AI drone/robot (not creature eyes)
+- [x] Regenerate header with blue/cyan Chrono-Shard crystal and game logo on backpack
+- [x] Regenerate header with character closer, full circular logo on back, no text overlays
+- [x] Update Kickstarter HTML with new logo-focused header
+- [x] Update landing page with new logo-focused header
+- [x] Fix text cutoff on "EVERY DEATH IS UNIQUE." image
+- [ ] Push all changes to GitHub
