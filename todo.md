@@ -25,7 +25,7 @@
 - [x] Push all changes to GitHub
 - [x] Update Kickstarter preview copy to emphasize "Generated Adventure" genre
 - [x] Update landing page copy with new positioning and challenge angle
-- [ ] Push Kickstarter changes to GitHub
-- [ ] Save landing page checkpoint
-- [ ] Create marketing assets (social media graphics, email headers)
-- [ ] Write video sales letter script for Kickstarter project video
+- [x] Push Kickstarter changes to GitHub
+- [x] Save landing page checkpoint
+- [x] Create marketing assets (social media graphics, email headers)
+- [x] Write video sales letter script for Kickstarter project video
