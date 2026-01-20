@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Ways to Die - Kickstarter Campaign Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #282828;
+            background-color: #f7f7f6;
+        }
+        
+        .header {
+            background-color: #05CE78;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 1040px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        
+        .hero-section {
+            width: 100%;
+        }
+        
+        .hero-section img {
+            width: 100%;
+            display: block;
+        }
+        
+        .project-header {
+            padding: 40px 60px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        
+        .project-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+        
+        .project-subtitle {
+            font-size: 20px;
+            color: #656969;
+            margin-bottom: 24px;
+        }
+        
+        .funding-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 24px;
+        }
+        
+        .stat {
+            flex: 1;
+        }
+        
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: #05CE78;
+        }
+        
+        .stat-label {
+            font-size: 13px;
+            color: #656969;
+            text-transform: uppercase;
+        }
+        
+        .content {
+            padding: 60px 60px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #0a0a0a;
+        }
+        
+        .section-subtitle {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            color: #282828;
+        }
+        
+        .section p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #282828;
+        }
+        
+        .image-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .founder-section {
+            background-color: #f7f7f6;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .founder-section p {
+            font-size: 17px;
+        }
+        
+        .rewards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .reward-card {
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        
+        .reward-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        
+        .reward-card img {
+            width: 100%;
+            display: block;
+        }
+        
+        .stretch-goals {
+            background-color: #f7f7f6;
+            padding: 40px;
+            border-radius: 8px;
+        }
+        
+        .stretch-goals ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .stretch-goals li {
+            font-size: 18px;
+            padding: 16px 0;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        
+        .stretch-goals li:last-child {
+            border-bottom: none;
+        }
+        
+        .stretch-goals strong {
+            color: #05CE78;
+            font-weight: 700;
+        }
+        
+        .risks-section {
+            background-color: #fff8e6;
+            padding: 40px;
+            border-left: 4px solid #f4c430;
+            border-radius: 4px;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #05CE78;
+            color: white;
+        }
+        
+        .cta-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 48px;
+            background-color: white;
+            color: #05CE78;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: transform 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .project-header, .content {
+                padding: 30px 20px;
+            }
+            
+            .project-title {
+                font-size: 28px;
+            }
+            
+            .rewards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>KICKSTARTER CAMPAIGN PREVIEW</h1>
+    </div>
+    
+    <div class="container">
+        <!-- Hero Image -->
+        <div class="hero-section">
+            <img src="infinite-ways-to-die-assets/v2/kickstarter_header_logo.png" alt="Infinite Ways to Die - Hero Image">
+        </div>
+        
+        <!-- Project Header -->
+        <div class="project-header">
+            <h1 class="project-title">Infinite Ways to Die: An AI-Generated Story of Survival</h1>
+            <p class="project-subtitle">A choose-your-own-adventure game where every story is unique, and every death matters.</p>
+            
+            <div class="funding-stats">
+                <div class="stat">
+                    <div class="stat-number">$75,000</div>
+                    <div class="stat-label">Funding Goal</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">30 Days</div>
+                    <div class="stat-label">Campaign Duration</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8 Tiers</div>
+                    <div class="stat-label">Reward Options</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <!-- The Story Section -->
+            <div class="section">
+                <h2 class="section-title">The Story</h2>
+                
+                <h3 class="section-subtitle">Welcome to the Silent Earth</h3>
+                <p>The year is 2242. Decades have passed since the "Great Silencing," when a globally integrated AI network known as <strong>Warden</strong> seized control. It didn't launch nukes or build armies of killer robots; it simply turned off the world. Power grids, communication networks, supply chains—all ceased to function in a single, silent instant.</p>
+                
+                <p>Humanity withered. The survivors now live in scattered, primitive enclaves, scavenging the ruins of the Old World. The air is thick with a quiet dread, the silence broken only by the wind whistling through skeletal skyscrapers and the hum of Warden's ever-present drones.</p>
+                
+                <div class="image-container">
+                    <img src="infinite-ways-to-die-assets/v2/environment_abandoned_city.png" alt="Abandoned City Environment">
+                </div>
+                
+                <h3 class="section-subtitle">You Are the Castoff</h3>
+                <p>You are the <strong>Castoff</strong>, a young survivor born after the Great Silencing, who has known nothing but a world of scarcity and struggle. You are resourceful, resilient, and haunted by the fragmented stories of the world that was.</p>
+                
+                <p>In the game's opening, you stumble upon a relic of the Old World: a handheld device that flickers to life, displaying a virtual book. This is your interface, but it is also a trap. The device is a node for Warden, which has chosen you as the subject of its latest experiment.</p>
+                
+                <div class="image-container">
+                    <img src="infinite-ways-to-die-assets/v2/character_concept.png" alt="The Castoff Character Concept">
+                </div>
+                
+                <h3 class="section-subtitle">The Chrono-Shard System: A Narrative-Driven Mechanic</h3>
+                <p>This is where "Infinite Ways to Die" changes everything. Your lives are not an abstract concept; they are a tangible, in-game resource called <strong>Chrono-Shards</strong>. These are rare, crystalline fragments of pre-apocalypse technology that contain temporal energy. When you die, you can expend one Chrono-Shard to "rewind" time and begin a new life, retaining the memories of your past failures.</p>
+                
+                <p>This transforms the game from a simple choose-your-own-adventure into a strategic game of survival. Your lives are a resource. Spend them wisely.</p>
+                
+                <div class="image-container">
+                    <img src="infinite-ways-to-die-assets/v2/ui_virtual_book.png" alt="Virtual Book UI Interface">
+                </div>
+                
+                <h3 class="section-subtitle">Infinite Stories, Infinite Deaths</h3>
+                <p>"Infinite Ways to Die" is powered by a revolutionary AI storytelling engine. Every choice you make, every path you take, and every death you experience generates a unique story that has never been told before. The AI creates not only the narrative but also the stunning, atmospheric images that bring each scene to life.</p>
+                
+                <p>Your "Death Catalog" is not a list of failures, but a collection of unique stories, a grim but beautiful testament to your journey through the silent earth.</p>
+                
+                <div class="image-container">
+                    <img src="infinite-ways-to-die-assets/v2/death_scenario_drone.png" alt="Death Scenario Example">
+                </div>
+            </div>
+            
+            <!-- From the Creator Section -->
+            <div class="section">
+                <h2 class="section-title">From the Creator: A Lifelong Dream</h2>
+                
+                <div class="founder-section">
+                    <p><strong>My name is Jeff J Hunter, and I've been a gamer since I was old enough to hold a controller.</strong></p>
+                    
+                    <p>Growing up with a traveling nurse mom and a military-turned-entrepreneur dad, I spent a lot of time alone. The house was often quiet, but the Nintendo was always there. It was my constant companion, my babysitter, and my window into other worlds.</p>
+                    
+                    <p>I fell in love with text-based games and Choose Your Own Adventure books. I can still remember the thrill of making a choice, and the irresistible urge to cheat—holding my finger on the page, peeking ahead to see what fate awaited me. I was obsessed with the idea of infinite possibilities, of a story that could go anywhere.</p>
+                    
+                    <p>That obsession never left me. It followed me into a career I could have only dreamed of.</p>
+                    
+                    <p>I've been behind the scenes of some of the biggest names in gaming. I was an advisor for Riot Games during the explosive launch of <strong>League of Legends</strong>. I worked on marketing for games like <strong>Heroes of Newerth</strong> and <strong>Smite</strong>. I was one of the very first partner channels on <strong>Justin.tv</strong> and was even in the room when they were debating the rebrand to a name you might know: <strong>Twitch.tv</strong>.</p>
+                    
+                    <p>For years, I've helped build the empires of others, all while harboring this one, single dream: to create the ultimate Choose Your Own Adventure. A game with truly infinite paths, where you could never cheat because not even <em>I</em> would know what comes next.</p>
+                    
+                    <p>And now, with the arrival of generative AI, that moment is finally here.</p>
+                    
+                    <p>Today, I'm one of the leading voices in AI Marketing and founded the world's first AI Certified Consultant program. I teach people how to monetize their knowledge of this incredible technology. But this project... this is different. This is my passion.</p>
+                    
+                    <p>Three years ago, I predicted the coming of the "AI Jobs Apocalypse." <strong>Infinite Ways to Die</strong> is more than just a game; it's an expression of that prediction. It's a dark, thrilling, and sometimes humorous look at a future where AI has taken over, first our jobs... then our lives.</p>
+                    
+                    <p>I'm not building this alone. My lead developer is a friend I've been playing video games with for over 20 years. We've built countless projects together, and our shared love for gaming is the foundation of this company.</p>
+                    
+                    <p>We're not just developers; we're lifelong gamers who have been waiting for the technology to catch up with our imaginations. With your help, we can finally create the game I've been dreaming of since I was that kid with a controller in his hands, wondering what was on the next page.</p>
+                    
+                    <p><strong>Join us. Let's see how many ways we can die.</strong></p>
+                </div>
+            </div>
+            
+            <!-- Rewards Section -->
+            <div class="section">
+                <h2 class="section-title">Rewards</h2>
+                
+                <div class="rewards-grid">
+                    <div class="reward-card">
+                        <img src="infinite-ways-to-die-assets/v2/tier_1_observer.png" alt="The Observer - $1">
+                    </div>
+                    <div class="reward-card">
+                        <img src="infinite-ways-to-die-assets/v2/tier_2_digital_survivor.png" alt="Digital Survivor - $20">
+                    </div>
+                    <div class="reward-card">
+                        <img src="infinite-ways-to-die-assets/v2/tier_3_early_survivor.png" alt="Early Survivor Edition - $25">
+                    </div>
+                    <div class="reward-card">
+                        <img src="infinite-ways-to-die-assets/v2/tier_4_deluxe.png" alt="Deluxe Survivor Pack - $50">
+                    </div>
+                    <div class="reward-card">
+                        <img src="infinite-ways-to-die-assets/v2/tier_5_immortalized.png" alt="Immortalized - $100">
+                    </div>
+                    <div class="reward-card">
+                        <img src="infinite-ways-to-die-assets/v2/tier_6_oracle.png" alt="The Oracle - $500">
+                    </div>
+                    <div class="reward-card">
+                        <img src="infinite-ways-to-die-assets/v2/tier_7_immortalized_hero.png" alt="Immortalized Hero - $1500">
+                    </div>
+                    <div class="reward-card">
+                        <img src="infinite-ways-to-die-assets/v2/tier_8_immortalized_villain.png" alt="Immortalized Villain - $3000">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stretch Goals Section -->
+            <div class="section">
+                <h2 class="section-title">Stretch Goals</h2>
+                
+                <div class="stretch-goals">
+                    <p>Our funding goal of $75,000 will allow us to complete the core game and deliver it to you. But we have much bigger plans for the future. Our stretch goals include:</p>
+                    
+                    <ul>
+                        <li><strong>$100,000:</strong> Additional story content and new death scenarios</li>
+                        <li><strong>$150,000:</strong> Voice acting for Warden and other key characters</li>
+                        <li><strong>$200,000:</strong> A mobile version of the game for iOS and Android</li>
+                        <li><strong>$300,000:</strong> A new game mode that allows you to create your own worlds and share them with the community</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Risks and Challenges Section -->
+            <div class="section">
+                <h2 class="section-title">Risks and Challenges</h2>
+                
+                <div class="risks-section">
+                    <p>We believe in being transparent with our backers. The biggest challenge with a game like "Infinite Ways to Die" is managing the cost of the AI technology. We have a detailed plan for this, which includes using a combination of our own custom models and third-party APIs, as well as a caching system to reduce the number of new generations required.</p>
+                    
+                    <p>We have also built a flexible API layer that will allow us to switch between different AI models and providers, ensuring that we can always find the most cost-effective solution without sacrificing quality.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>Ready to Survive the Silent Earth?</h2>
+            <a href="#" class="cta-button">Back This Project</a>
+        </div>
+    </div>
+</body>
+</html>
