@@ -30,3 +30,4 @@
 - [x] Create marketing assets (social media graphics, email headers)
 - [x] Write video sales letter script for Kickstarter project video
 - [x] Regenerate marketing assets with exact circular logo design for brand consistency
+- [x] Regenerate marketing assets with character-from-behind composition showing logo on backpack
